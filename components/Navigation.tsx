@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const links = [
@@ -20,26 +21,15 @@ export default function Navigation() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-9 h-9 bg-gruen-700 rounded-lg flex items-center justify-center shrink-0">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                className="w-5 h-5 text-white"
-                stroke="currentColor"
-                strokeWidth="2"
-              >
-                <path d="M12 22V12M12 12C12 7 7 3 2 4c0 5 3 9 7 10M12 12c0-5 5-9 10-8-1 5-5 8-10 8" />
-              </svg>
-            </div>
-            <div>
-              <div className="font-bold text-gruen-800 text-[17px] leading-tight">
-                Grünwerk
-              </div>
-              <div className="text-[11px] text-gray-400 leading-tight tracking-wide uppercase">
-                Gartenbau
-              </div>
-            </div>
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/gruenwerk-logo.png"
+              alt="Grünwerk Gartenbau"
+              width={140}
+              height={56}
+              className="h-10 w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop */}

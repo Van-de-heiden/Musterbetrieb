@@ -1,10 +1,9 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const leistungen = [
   {
-    icon: (
-      <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9zM9 22V12h6v10" />
-    ),
+    icon: <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9zM9 22V12h6v10" />,
     title: "Neuanlage & Planung",
     text: "Vom leeren Grundstück zum Traumgarten – wir planen und gestalten Ihren Außenbereich von Grund auf.",
   },
@@ -20,9 +19,7 @@ const leistungen = [
     text: "Regelmäßige Pflege, Rasenmähen, Heckenschnitt und Saisonvorbereitung – damit Ihr Garten immer top aussieht.",
   },
   {
-    icon: (
-      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-    ),
+    icon: <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />,
     title: "Rasen & Bewässerung",
     text: "Professionelle Rasenpflege und die Planung effizienter Bewässerungsanlagen für einen grünen Garten auch im Sommer.",
   },
@@ -44,31 +41,40 @@ const vorteile = [
   { zahl: "100%", label: "Qualitätsgarantie" },
 ];
 
+const projekte = [
+  { src: "/projekt-blumen.png", label: "Blumenbeet & Staudenpflanzung" },
+  { src: "/projekt-brunnen.png", label: "Wasserelement & Brunnen" },
+  { src: "/projekt-sitzplatz.png", label: "Terrassengestaltung" },
+  { src: "/projekt-treppe.png", label: "Gartentreppe & Wege" },
+  { src: "/projekt-2.png", label: "Neuanlage Hausgarten" },
+  { src: "/rasen.png", label: "Rasenpflege & Neuanlage" },
+];
+
 export default function Startseite() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-gruen-900 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-gruen-900 via-gruen-800 to-gruen-700 opacity-95" />
-        <div
-          className="absolute inset-0 opacity-10"
-          style={{
-            backgroundImage:
-              "radial-gradient(circle at 20% 80%, #7ABF38 0%, transparent 50%), radial-gradient(circle at 80% 20%, #5B9A2B 0%, transparent 50%)",
-          }}
+      <section className="relative h-[85vh] min-h-[520px] max-h-[780px] flex items-center overflow-hidden">
+        <Image
+          src="/sitzplatz.png"
+          alt="Professionell gestalteter Garten mit Terasse"
+          fill
+          className="object-cover object-center"
+          priority
         />
+        <div className="absolute inset-0 bg-gradient-to-r from-gruen-900/85 via-gruen-900/60 to-transparent" />
 
-        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-36">
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 bg-gruen-700/60 text-gruen-200 text-xs font-medium px-3 py-1.5 rounded-full mb-6 border border-gruen-600">
               <span className="w-1.5 h-1.5 rounded-full bg-gruen-300" />
               Wien &amp; Umgebung
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-white">
               Ihr Garten in{" "}
               <span className="text-gruen-300">besten Händen</span>
             </h1>
-            <p className="text-lg text-gruen-200 leading-relaxed mb-10 max-w-xl">
+            <p className="text-lg text-gruen-100 leading-relaxed mb-10 max-w-xl">
               Grünwerk Gartenbau steht für professionelle Gartengestaltung,
               zuverlässige Pflege und nachhaltige Lösungen – seit über 15 Jahren.
             </p>
@@ -81,7 +87,7 @@ export default function Startseite() {
               </Link>
               <Link
                 href="/ueber-uns"
-                className="bg-white/10 hover:bg-white/20 text-white font-semibold px-7 py-3.5 rounded-xl border border-white/20 transition-colors text-center"
+                className="bg-white/10 hover:bg-white/20 text-white font-semibold px-7 py-3.5 rounded-xl border border-white/30 transition-colors text-center"
               >
                 Über uns
               </Link>
@@ -96,9 +102,7 @@ export default function Startseite() {
           <div className="grid grid-cols-3 divide-x divide-sand-200">
             {vorteile.map((v) => (
               <div key={v.label} className="text-center px-6 py-4">
-                <div className="text-3xl md:text-4xl font-bold text-gruen-700 mb-1">
-                  {v.zahl}
-                </div>
+                <div className="text-3xl md:text-4xl font-bold text-gruen-700 mb-1">{v.zahl}</div>
                 <div className="text-sm text-gray-500">{v.label}</div>
               </div>
             ))}
@@ -147,13 +151,7 @@ export default function Startseite() {
               className="inline-flex items-center gap-2 text-gruen-700 font-semibold hover:text-gruen-800 transition-colors"
             >
               Alle Leistungen ansehen
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                className="w-4 h-4"
-              >
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-4 h-4">
                 <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
             </Link>
@@ -161,7 +159,7 @@ export default function Startseite() {
         </div>
       </section>
 
-      {/* Galerie Platzhalter */}
+      {/* Galerie */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-sand-100">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
@@ -173,36 +171,16 @@ export default function Startseite() {
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {[
-              { label: "Gartenneuanlage, 1190 Wien" },
-              { label: "Terrassengestaltung, 1130 Wien" },
-              { label: "Rasen & Bewässerung, 1220 Wien" },
-              { label: "Heckenschnitt & Pflege, 1140 Wien" },
-              { label: "Frühjahrsputz, 1180 Wien" },
-              { label: "Neuanlage Vorgarten, 1150 Wien" },
-            ].map((p, i) => (
-              <div
-                key={i}
-                className="h-52 bg-gruen-100 rounded-2xl flex items-end p-4 overflow-hidden relative border border-gruen-200"
-              >
-                <div
-                  className="absolute inset-0 opacity-20"
-                  style={{
-                    backgroundImage: `radial-gradient(ellipse at ${i % 2 === 0 ? "30%" : "70%"} ${i < 3 ? "70%" : "30%"}, #5B9A2B 0%, transparent 60%)`,
-                  }}
+            {projekte.map((p, i) => (
+              <div key={i} className="relative h-56 rounded-2xl overflow-hidden group">
+                <Image
+                  src={p.src}
+                  alt={p.label}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="1"
-                    className="w-16 h-16 text-gruen-300"
-                  >
-                    <path d="M12 22V12M12 12C12 7 7 3 2 4c0 5 3 9 7 10M12 12c0-5 5-9 10-8-1 5-5 8-10 8" />
-                  </svg>
-                </div>
-                <span className="relative text-xs font-medium text-gruen-800 bg-white/80 px-2.5 py-1 rounded-lg">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+                <span className="absolute bottom-3 left-3 text-xs font-medium text-white bg-black/30 backdrop-blur-sm px-2.5 py-1 rounded-lg">
                   {p.label}
                 </span>
               </div>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Über uns – Grünwerk Gartenbau",
@@ -25,9 +26,7 @@ const werte = [
   {
     title: "Nachhaltigkeit",
     text: "Wir setzen auf standortgerechte Pflanzen, ressourcenschonende Bewässerung und umweltfreundliche Arbeitsweisen.",
-    icon: (
-      <path d="M12 22V12M12 12C12 7 7 3 2 4c0 5 3 9 7 10M12 12c0-5 5-9 10-8-1 5-5 8-10 8" />
-    ),
+    icon: <path d="M12 22V12M12 12C12 7 7 3 2 4c0 5 3 9 7 10M12 12c0-5 5-9 10-8-1 5-5 8-10 8" />,
   },
 ];
 
@@ -57,9 +56,16 @@ const team = [
 export default function UeberUns() {
   return (
     <>
-      {/* Header */}
-      <section className="bg-gruen-900 text-white py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
+      {/* Header mit Hintergrundbild */}
+      <section className="relative bg-gruen-900 text-white py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <Image
+          src="/projekt.png"
+          alt="Gartenprojekt von Grünwerk"
+          fill
+          className="object-cover object-center opacity-25"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-gruen-900/90 to-gruen-900/60" />
+        <div className="relative max-w-6xl mx-auto">
           <div className="text-gruen-300 text-sm font-medium mb-3">Wer wir sind</div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Über uns</h1>
           <p className="text-gruen-200 text-lg max-w-xl">
@@ -91,27 +97,13 @@ export default function UeberUns() {
             </div>
           </div>
 
-          {/* Bild Platzhalter */}
-          <div className="h-80 bg-gruen-100 rounded-2xl flex items-center justify-center border border-gruen-200 relative overflow-hidden">
-            <div
-              className="absolute inset-0 opacity-20"
-              style={{
-                backgroundImage:
-                  "radial-gradient(ellipse at 30% 70%, #5B9A2B 0%, transparent 60%)",
-              }}
+          <div className="relative h-80 rounded-2xl overflow-hidden shadow-lg">
+            <Image
+              src="/projekt-sitzplatz.png"
+              alt="Gartenanlage von Grünwerk Gartenbau"
+              fill
+              className="object-cover"
             />
-            <div className="text-center relative">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1"
-                className="w-20 h-20 text-gruen-300 mx-auto mb-3"
-              >
-                <path d="M12 22V12M12 12C12 7 7 3 2 4c0 5 3 9 7 10M12 12c0-5 5-9 10-8-1 5-5 8-10 8" />
-              </svg>
-              <p className="text-gruen-500 text-sm">Foto folgt</p>
-            </div>
           </div>
         </div>
       </section>
@@ -120,19 +112,12 @@ export default function UeberUns() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-sand-100">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
-            <h2 className="text-3xl md:text-4xl font-bold text-gruen-900 mb-4">
-              Unsere Werte
-            </h2>
-            <p className="text-gray-500 max-w-xl mx-auto">
-              Drei Grundsätze, nach denen wir täglich arbeiten.
-            </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-gruen-900 mb-4">Unsere Werte</h2>
+            <p className="text-gray-500 max-w-xl mx-auto">Drei Grundsätze, nach denen wir täglich arbeiten.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {werte.map((w) => (
-              <div
-                key={w.title}
-                className="bg-white rounded-2xl p-8 border border-sand-200 text-center"
-              >
+              <div key={w.title} className="bg-white rounded-2xl p-8 border border-sand-200 text-center">
                 <div className="w-14 h-14 bg-gruen-100 rounded-2xl flex items-center justify-center mx-auto mb-5">
                   <svg
                     viewBox="0 0 24 24"
@@ -154,30 +139,40 @@ export default function UeberUns() {
         </div>
       </section>
 
-      {/* Team */}
+      {/* Team – Foto + Karten */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
-            <h2 className="text-3xl md:text-4xl font-bold text-gruen-900 mb-4">
-              Das Team
-            </h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gruen-900 mb-4">Das Team</h2>
             <p className="text-gray-500 max-w-xl mx-auto">
               Personen mit Erfahrung, Herz und dem richtigen Werkzeug.
             </p>
           </div>
+
+          {/* Großes Teamfoto */}
+          <div className="relative h-72 md:h-96 rounded-2xl overflow-hidden mb-10 shadow-lg">
+            <Image
+              src="/team.png"
+              alt="Das Team von Grünwerk Gartenbau"
+              fill
+              className="object-cover object-top"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-gruen-900/60 to-transparent" />
+            <div className="absolute bottom-5 left-6 text-white">
+              <p className="font-bold text-lg">Das Grünwerk-Team</p>
+              <p className="text-gruen-200 text-sm">12 Mitarbeiterinnen und Mitarbeiter in Wien</p>
+            </div>
+          </div>
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {team.map((person) => (
               <div
                 key={person.name}
                 className="bg-white rounded-2xl p-6 border border-sand-200 hover:shadow-md transition-all"
               >
-                {/* Avatar Platzhalter */}
-                <div className="w-16 h-16 rounded-full bg-gruen-100 flex items-center justify-center mb-4 border-2 border-gruen-200">
-                  <span className="text-gruen-700 font-bold text-lg">
-                    {person.name
-                      .split(" ")
-                      .map((n) => n[0])
-                      .join("")}
+                <div className="w-12 h-12 rounded-full bg-gruen-100 flex items-center justify-center mb-4 border-2 border-gruen-200">
+                  <span className="text-gruen-700 font-bold">
+                    {person.name.split(" ").map((n) => n[0]).join("")}
                   </span>
                 </div>
                 <div className="font-bold text-gruen-900 mb-0.5">{person.name}</div>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -72,9 +73,16 @@ const leistungen = [
 export default function Leistungen() {
   return (
     <>
-      {/* Header */}
-      <section className="bg-gruen-900 text-white py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
+      {/* Header mit Hintergrundbild */}
+      <section className="relative bg-gruen-900 text-white py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <Image
+          src="/rasen.png"
+          alt="Professionelle Rasenpflege"
+          fill
+          className="object-cover object-center opacity-30"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-gruen-900/90 to-gruen-900/50" />
+        <div className="relative max-w-6xl mx-auto">
           <div className="text-gruen-300 text-sm font-medium mb-3">Was wir anbieten</div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Unsere Leistungen</h1>
           <p className="text-gruen-200 text-lg max-w-xl">
@@ -82,6 +90,19 @@ export default function Leistungen() {
           </p>
         </div>
       </section>
+
+      {/* Bild-Banner Übergang */}
+      <div className="grid grid-cols-3 h-36 overflow-hidden">
+        <div className="relative">
+          <Image src="/projekt-treppe.png" alt="" fill className="object-cover" />
+        </div>
+        <div className="relative">
+          <Image src="/bagger.png" alt="" fill className="object-cover" />
+        </div>
+        <div className="relative">
+          <Image src="/werkzeug.png" alt="" fill className="object-cover" />
+        </div>
+      </div>
 
       {/* Leistungen */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
@@ -102,10 +123,7 @@ export default function Leistungen() {
                     <p className="text-gray-500 text-sm leading-relaxed mb-5">{item.text}</p>
                     <ul className="space-y-1.5">
                       {item.details.map((d) => (
-                        <li
-                          key={d}
-                          className="flex items-center gap-2 text-xs text-gray-600"
-                        >
+                        <li key={d} className="flex items-center gap-2 text-xs text-gray-600">
                           <svg
                             viewBox="0 0 24 24"
                             fill="none"
