@@ -8,14 +8,18 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Brand */}
           <div>
-            <div className="mb-4">
+            <div className="flex items-center gap-3 mb-4">
               <Image
                 src="/gruenwerk-logo.png"
                 alt="Grünwerk Gartenbau"
-                width={130}
-                height={52}
-                className="h-10 w-auto brightness-0 invert"
+                width={48}
+                height={48}
+                className="h-12 w-12 object-contain brightness-0 invert"
               />
+              <div>
+                <div className="font-bold text-white text-base leading-none">Grünwerk</div>
+                <div className="text-xs font-semibold tracking-widest text-gruen-400 uppercase mt-1">Gartenbau</div>
+              </div>
             </div>
             <p className="text-gruen-300 text-sm leading-relaxed">
               Professionelle Gartengestaltung und -pflege in der Ostschweiz – seit 2009.
