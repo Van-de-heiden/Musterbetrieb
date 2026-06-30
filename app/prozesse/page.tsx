@@ -285,7 +285,7 @@ export default function Prozesse() {
             Angebotserstellung, CRM, Einsatzplanung, Dokumentation – individuell auf Ihren Betrieb abgestimmt.
           </p>
           <a
-            href="https://pichler-advisory.at"
+            href="https://pichler-advisory.ch"
             className="inline-block bg-gruen-700 text-white font-bold px-8 py-4 rounded-xl hover:bg-gruen-800 transition-colors text-lg"
           >
             Jetzt mit Pichler Advisory sprechen

@@ -34,7 +34,7 @@ const team = [
   {
     name: "Klaus Berger",
     rolle: "Geschäftsführer & Gartenmeister",
-    text: "Klaus gründete Grünwerk 2009 nach 10 Jahren als leitender Gärtner in einem Wiener Gartenbaubetrieb. Sein Credo: Kein Garten gleicht dem anderen.",
+    text: "Klaus gründete Grünwerk 2009 nach 10 Jahren als leitender Gärtner in einem St. Galler Gartenbaubetrieb. Sein Credo: Kein Garten gleicht dem anderen.",
   },
   {
     name: "Sandra Holzer",
@@ -69,7 +69,7 @@ export default function UeberUns() {
           <div className="text-gruen-300 text-sm font-medium mb-3">Wer wir sind</div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Über uns</h1>
           <p className="text-gruen-200 text-lg max-w-xl">
-            Ein Familienbetrieb aus Wien mit Leidenschaft für Gärten und dem Anspruch, jeden Kunden langfristig zu begeistern.
+            Ein Familienbetrieb aus der Ostschweiz mit Leidenschaft für Gärten und dem Anspruch, jeden Kunden langfristig zu begeistern.
           </p>
         </div>
       </section>
@@ -89,7 +89,7 @@ export default function UeberUns() {
                 Was 2009 mit einem Kleintransporter, drei Mitarbeitern und einem klaren Versprechen begann – faire Preise, handwerkliche Qualität, persönlicher Service – ist heute ein eingespieltes Team von zwölf Fachleuten.
               </p>
               <p>
-                Grünwerk Gartenbau betreut heute mehr als 400 Privat- und Gewerbekunden in Wien und dem angrenzenden Niederösterreich. Viele davon sind seit dem ersten Jahr dabei.
+                Grünwerk Gartenbau betreut heute mehr als 150 Privat- und Gewerbekunden in Uzwil, Wil, Flawil und Umgebung. Viele davon sind seit dem ersten Jahr dabei.
               </p>
               <p>
                 2023 haben wir gemeinsam mit <strong className="text-gruen-700">Pichler Advisory</strong> unsere Abläufe konsequent digitalisiert – von der Auftragserfassung bis zur Rechnungsstellung. Das Ergebnis: mehr Zeit für das, was zählt – die Arbeit im Garten.
@@ -160,7 +160,7 @@ export default function UeberUns() {
             <div className="absolute inset-0 bg-gradient-to-t from-gruen-900/60 to-transparent" />
             <div className="absolute bottom-5 left-6 text-white">
               <p className="font-bold text-lg">Das Grünwerk-Team</p>
-              <p className="text-gruen-200 text-sm">12 Mitarbeiterinnen und Mitarbeiter in Wien</p>
+              <p className="text-gruen-200 text-sm">6 Mitarbeiterinnen und Mitarbeiter in der Ostschweiz</p>
             </div>
           </div>
 

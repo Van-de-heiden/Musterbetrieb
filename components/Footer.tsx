@@ -18,7 +18,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-gruen-300 text-sm leading-relaxed">
-              Professionelle Gartengestaltung und -pflege in Wien und Umgebung – seit 2009.
+              Professionelle Gartengestaltung und -pflege in der Ostschweiz – seit 2009.
             </p>
           </div>
 
@@ -49,19 +49,19 @@ export default function Footer() {
               Kontakt
             </div>
             <address className="not-italic text-sm text-gruen-300 space-y-1.5">
-              <p>Musterstraße 12</p>
-              <p>1020 Wien, Österreich</p>
+              <p>Gewerbestrasse 4</p>
+              <p>9240 Uzwil, Schweiz</p>
               <p className="mt-3">
-                <a href="tel:+43123456789" className="hover:text-white transition-colors">
-                  +43 1 234 56 789
+                <a href="tel:+41719501234" className="hover:text-white transition-colors">
+                  +41 71 950 12 34
                 </a>
               </p>
               <p>
                 <a
-                  href="mailto:info@gruenwerk-gartenbau.at"
+                  href="mailto:info@gruenwerk-gartenbau.ch"
                   className="hover:text-white transition-colors"
                 >
-                  info@gruenwerk-gartenbau.at
+                  info@gruenwerk-gartenbau.ch
                 </a>
               </p>
             </address>
@@ -73,7 +73,7 @@ export default function Footer() {
           <p>
             Betriebsoptimierung durch{" "}
             <a
-              href="https://pichler-advisory.at"
+              href="https://pichler-advisory.ch"
               className="text-gruen-300 hover:text-white font-medium transition-colors"
             >
               Pichler Advisory

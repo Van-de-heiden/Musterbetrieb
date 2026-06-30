@@ -156,10 +156,10 @@ export default function Leistungen() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:+43123456789"
+              href="tel:+41719501234"
               className="bg-gruen-700 text-white font-bold px-7 py-3.5 rounded-xl hover:bg-gruen-800 transition-colors"
             >
-              +43 1 234 56 789
+              +41 71 950 12 34
             </a>
             <Link
               href="/ueber-uns"

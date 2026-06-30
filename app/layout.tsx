@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 export const metadata: Metadata = {
   title: "Grünwerk Gartenbau – Ihr Garten in besten Händen",
   description:
-    "Grünwerk Gartenbau – professionelle Gartengestaltung, Gartenpflege und Neuanlagen in Wien und Umgebung.",
+    "Grünwerk Gartenbau – professionelle Gartengestaltung, Gartenpflege und Neuanlagen in der Ostschweiz.",
 };
 
 export default function RootLayout({

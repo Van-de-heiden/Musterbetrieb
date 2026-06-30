@@ -48,7 +48,7 @@ export default function Navigation() {
               </Link>
             ))}
             <a
-              href="tel:+43123456789"
+              href="tel:+41719501234"
               className="bg-gruen-700 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-gruen-800 transition-colors"
             >
               Jetzt anrufen
@@ -96,7 +96,7 @@ export default function Navigation() {
             ))}
             <div className="pt-2">
               <a
-                href="tel:+43123456789"
+                href="tel:+41719501234"
                 className="block bg-gruen-700 text-white px-4 py-2.5 rounded-lg text-sm font-semibold text-center"
               >
                 Jetzt anrufen

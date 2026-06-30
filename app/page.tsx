@@ -37,7 +37,7 @@ const leistungen = [
 
 const vorteile = [
   { zahl: "15+", label: "Jahre Erfahrung" },
-  { zahl: "400+", label: "Zufriedene Kunden" },
+  { zahl: "150+", label: "Zufriedene Kunden" },
   { zahl: "100%", label: "Qualitätsgarantie" },
 ];
 
@@ -68,7 +68,7 @@ export default function Startseite() {
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 bg-gruen-700/60 text-gruen-200 text-xs font-medium px-3 py-1.5 rounded-full mb-6 border border-gruen-600">
               <span className="w-1.5 h-1.5 rounded-full bg-gruen-300" />
-              Wien &amp; Umgebung
+              Ostschweiz
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-white">
               Ihr Garten in{" "}
@@ -167,7 +167,7 @@ export default function Startseite() {
               Unsere Projekte
             </h2>
             <p className="text-gray-500 max-w-xl mx-auto">
-              Einblicke in abgeschlossene Gartenprojekte aus Wien und Umgebung.
+              Einblicke in abgeschlossene Gartenprojekte aus der Ostschweiz.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -200,13 +200,13 @@ export default function Startseite() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:+43123456789"
+              href="tel:+41719501234"
               className="bg-white text-gruen-800 font-bold px-7 py-3.5 rounded-xl hover:bg-gruen-50 transition-colors"
             >
-              +43 1 234 56 789
+              +41 71 950 12 34
             </a>
             <a
-              href="mailto:info@gruenwerk-gartenbau.at"
+              href="mailto:info@gruenwerk-gartenbau.ch"
               className="bg-gruen-600 text-white font-semibold px-7 py-3.5 rounded-xl border border-gruen-500 hover:bg-gruen-500 transition-colors"
             >
               E-Mail schreiben
