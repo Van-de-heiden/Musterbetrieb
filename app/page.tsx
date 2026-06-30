@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import KontaktFormular from "@/components/KontaktFormular";
 
 const leistungen = [
   {
@@ -197,28 +198,64 @@ export default function Startseite() {
         </div>
       </section>
 
-      {/* CTA Banner */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gruen-700">
-        <div className="max-w-3xl mx-auto text-center text-white">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Bereit für Ihren Traumgarten?
-          </h2>
-          <p className="text-gruen-200 text-lg mb-8">
-            Kontaktieren Sie uns für eine kostenlose Erstberatung – wir melden uns innerhalb von 24 Stunden.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="tel:+41719501234"
-              className="bg-white text-gruen-800 font-bold px-7 py-3.5 rounded-xl hover:bg-gruen-50 transition-colors"
-            >
-              +41 71 950 12 34
-            </a>
-            <a
-              href="mailto:info@gruenwerk-gartenbau.ch"
-              className="bg-gruen-600 text-white font-semibold px-7 py-3.5 rounded-xl border border-gruen-500 hover:bg-gruen-500 transition-colors"
-            >
-              E-Mail schreiben
-            </a>
+      {/* Kontakt */}
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-sand-100">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-start">
+
+            {/* Links: Infos */}
+            <div>
+              <div className="text-gruen-600 text-sm font-semibold uppercase tracking-wider mb-3">Kontakt</div>
+              <h2 className="text-3xl md:text-4xl font-bold text-gruen-900 mb-5">
+                Kostenlose Erstberatung anfragen
+              </h2>
+              <p className="text-gray-500 leading-relaxed mb-10">
+                Schreiben Sie uns kurz, was Sie brauchen – wir melden uns innerhalb von 24 Stunden mit einem unverbindlichen Angebot.
+              </p>
+
+              <div className="space-y-5">
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-gruen-100 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 text-gruen-600">
+                      <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div className="font-semibold text-gruen-900 text-sm">Telefon</div>
+                    <a href="tel:+41719501234" className="text-gray-500 text-sm hover:text-gruen-700 transition-colors">+41 71 950 12 34</a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-gruen-100 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 text-gruen-600">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                      <path d="M22 6l-10 7L2 6" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div className="font-semibold text-gruen-900 text-sm">E-Mail</div>
+                    <a href="mailto:info@gruenwerk-gartenbau.ch" className="text-gray-500 text-sm hover:text-gruen-700 transition-colors">info@gruenwerk-gartenbau.ch</a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-gruen-100 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 text-gruen-600">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                      <circle cx="12" cy="10" r="3" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div className="font-semibold text-gruen-900 text-sm">Standort</div>
+                    <span className="text-gray-500 text-sm">Gewerbestrasse 4, 9240 Uzwil</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Rechts: Formular */}
+            <KontaktFormular />
           </div>
         </div>
       </section>
