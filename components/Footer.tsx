@@ -53,19 +53,19 @@ export default function Footer() {
               Kontakt
             </div>
             <address className="not-italic text-sm text-gruen-300 space-y-1.5">
-              <p>Gewerbestrasse 4</p>
-              <p>9240 Uzwil, Schweiz</p>
+              <p>Häberlibodenstrasse 17</p>
+              <p>8725 Ernetschwil, Schweiz</p>
               <p className="mt-3">
-                <a href="tel:+41719501234" className="hover:text-white transition-colors">
-                  +41 71 950 12 34
+                <a href="tel:+41775383064" className="hover:text-white transition-colors">
+                  077 538 30 64
                 </a>
               </p>
               <p>
                 <a
-                  href="mailto:info@gruenwerk-gartenbau.ch"
+                  href="mailto:gartenbau.gruenwerk@gmail.com"
                   className="hover:text-white transition-colors"
                 >
-                  info@gruenwerk-gartenbau.ch
+                  gartenbau.gruenwerk@gmail.com
                 </a>
               </p>
             </address>
@@ -73,7 +73,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gruen-800 mt-12 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-gruen-500">
-          <p>© 2024 Grünwerk Gartenbau GmbH. Alle Rechte vorbehalten.</p>
+          <p>© 2024 Grünwerk Gartenbau. Alle Rechte vorbehalten.</p>
           <p>
             Betriebsoptimierung durch{" "}
             <a

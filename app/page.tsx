@@ -77,7 +77,7 @@ export default function Startseite() {
             </h1>
             <p className="text-lg text-gruen-100/90 leading-relaxed mb-10 max-w-lg">
               Professionelle Gartengestaltung, zuverlässige Pflege und nachhaltige Lösungen –
-              seit über 15 Jahren im Einsatz für Kunden in Uzwil, Wil, Flawil und Umgebung.
+              seit über 15 Jahren im Einsatz für Kunden in Uznach, Eschenbach, Kaltbrunn und Umgebung.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link
@@ -87,7 +87,7 @@ export default function Startseite() {
                 Leistungen ansehen
               </Link>
               <a
-                href="tel:+41719501234"
+                href="tel:+41775383064"
                 className="flex items-center justify-center gap-2 bg-white/15 hover:bg-white/25 text-white font-semibold px-8 py-3.5 rounded-xl border border-white/30 transition-all backdrop-blur-sm"
               >
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">
@@ -222,7 +222,7 @@ export default function Startseite() {
                   </div>
                   <div>
                     <div className="font-semibold text-gruen-900 text-sm">Telefon</div>
-                    <a href="tel:+41719501234" className="text-gray-500 text-sm hover:text-gruen-700 transition-colors">+41 71 950 12 34</a>
+                    <a href="tel:+41775383064" className="text-gray-500 text-sm hover:text-gruen-700 transition-colors">077 538 30 64</a>
                   </div>
                 </div>
 
@@ -235,7 +235,7 @@ export default function Startseite() {
                   </div>
                   <div>
                     <div className="font-semibold text-gruen-900 text-sm">E-Mail</div>
-                    <a href="mailto:info@gruenwerk-gartenbau.ch" className="text-gray-500 text-sm hover:text-gruen-700 transition-colors">info@gruenwerk-gartenbau.ch</a>
+                    <a href="mailto:gartenbau.gruenwerk@gmail.com" className="text-gray-500 text-sm hover:text-gruen-700 transition-colors">gartenbau.gruenwerk@gmail.com</a>
                   </div>
                 </div>
 
@@ -248,7 +248,7 @@ export default function Startseite() {
                   </div>
                   <div>
                     <div className="font-semibold text-gruen-900 text-sm">Standort</div>
-                    <span className="text-gray-500 text-sm">Gewerbestrasse 4, 9240 Uzwil</span>
+                    <span className="text-gray-500 text-sm">Häberlibodenstrasse 17, 8725 Ernetschwil</span>
                   </div>
                 </div>
               </div>

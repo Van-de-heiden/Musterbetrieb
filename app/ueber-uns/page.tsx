@@ -89,7 +89,7 @@ export default function UeberUns() {
                 Was 2009 mit einem Kleintransporter, drei Mitarbeitern und einem klaren Versprechen begann – faire Preise, handwerkliche Qualität, persönlicher Service – ist heute ein eingespieltes Team von zwölf Fachleuten.
               </p>
               <p>
-                Grünwerk Gartenbau betreut heute mehr als 150 Privat- und Gewerbekunden in Uzwil, Wil, Flawil und Umgebung. Viele davon sind seit dem ersten Jahr dabei.
+                Grünwerk Gartenbau betreut heute mehr als 150 Privat- und Gewerbekunden in Uznach, Eschenbach, Kaltbrunn und Umgebung. Viele davon sind seit dem ersten Jahr dabei.
               </p>
               <p>
                 2023 haben wir gemeinsam mit <strong className="text-gruen-700">Pichler Advisory</strong> unsere Abläufe konsequent digitalisiert – von der Auftragserfassung bis zur Rechnungsstellung. Das Ergebnis: mehr Zeit für das, was zählt – die Arbeit im Garten.
